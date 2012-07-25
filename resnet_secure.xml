@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<WLANProfile xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
+	<name>ResNet-Secure</name>
+	<SSIDConfig>
+		<SSID>
+			<hex>5265734E65742D536563757265</hex>
+			<name>ResNet-Secure</name>
+		</SSID>
+		<nonBroadcast>false</nonBroadcast>
+	</SSIDConfig>
+	<connectionType>ESS</connectionType>
+	<connectionMode>auto</connectionMode>
+	<autoSwitch>true</autoSwitch>
+	<MSM>
+		<security>
+			<authEncryption>
+				<authentication>WPA2</authentication>
+				<encryption>AES</encryption>
+				<useOneX>true</useOneX>
+			</authEncryption>
+			<OneX xmlns="http://www.microsoft.com/networking/OneX/v1">
+				<EAPConfig><EapHostConfig xmlns="http://www.microsoft.com/provisioning/EapHostConfig"><EapMethod><Type xmlns="http://www.microsoft.com/provisioning/EapCommon">25</Type><VendorId xmlns="http://www.microsoft.com/provisioning/EapCommon">0</VendorId><VendorType xmlns="http://www.microsoft.com/provisioning/EapCommon">0</VendorType><AuthorId xmlns="http://www.microsoft.com/provisioning/EapCommon">0</AuthorId></EapMethod><ConfigBlob>01000000860000000100000001000000010000005D000000150000000300000014000000D23209AD23D314232174E40D7F9D62139786633A14000000DE28F4A4FFE5B92FA3C503D1A349A7F9962A821214000000323C118E1BF7B8B65254E2E2100DD6029037F096000001000000170000001A00000001000000000000000000000000000000</ConfigBlob></EapHostConfig></EAPConfig>
+			</OneX>
+		</security>
+	</MSM>
+</WLANProfile>
